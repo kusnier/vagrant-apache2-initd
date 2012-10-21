@@ -1,0 +1,13 @@
+en:
+  vagrant:
+    plugins:
+      apache2:
+        execute:
+          executing: "Executing apache %{command} for %{vm_name}"
+          success: "Successfully executed: %{command}"
+          error: "Error. Can't execute: %{command}"
+          skip: "Skiping %{vm_name}. VM not running"
+        help:
+          usage: |-
+            Execute /etc/inid.d/apache2 with given command
+            Usage: vagrant apache2 [vm-name] <command>
